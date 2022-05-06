@@ -1,0 +1,21 @@
+﻿@model IEnumerable<BusInfo>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<body align="center" style="background-color:aqua;">
+    <div align="center">
+        <h1>Bus Information Details</h1>
+    </div>
+    @foreach(var item in Model)
+            {
+                <h3><b>Bus Id:</b>@item.BusID</h3>
+                <h3><b>Boarding Point:</b> @item.BoardingPoint</h3>
+                <h3><b>Travelling Date:</b>@item.TravelDate</h3>
+                <h3><b>Amount:</b>@item.Amount</h3>
+                <h3><b>Rating:</b>@item.Rating</h3>
+            }
+
+</body>
